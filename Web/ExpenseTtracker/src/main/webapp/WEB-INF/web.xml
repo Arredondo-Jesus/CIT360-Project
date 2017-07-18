@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>ExpenseTracker</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>Get the Expense data</description>
+    <display-name>ExpenseServlet</display-name>
+    <servlet-name>ExpenseServlet</servlet-name>
+    <servlet-class>edu.byui.cit360.controller.ExpenseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExpenseServlet</servlet-name>
+    <url-pattern>/ExpenseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Get Category Data</description>
+    <display-name>CategoryServlet</display-name>
+    <servlet-name>CategoryServlet</servlet-name>
+    <servlet-class>edu.byui.cit360.controller.CategoryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CategoryServlet</servlet-name>
+    <url-pattern>/CategoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>StoreServlet</display-name>
+    <servlet-name>StoreServlet</servlet-name>
+    <servlet-class>edu.byui.cit360.controller.StoreServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StoreServlet</servlet-name>
+    <url-pattern>/StoreServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
